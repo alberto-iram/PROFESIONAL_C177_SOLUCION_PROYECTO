@@ -6,13 +6,13 @@ app = Flask(__name__)
 templates = [
     {
         "inputs": 5,
-        "category": "Sports",
-        "word": "Chess"
+        "category": "Deportes",
+        "word": "Ajedrez"
     },
     {
         "inputs": 6,
-        "category": "European Country Name",
-        "word": "France"
+        "category": "Nombres de países europeos",
+        "word": "Francia"
     },
 
 ]
