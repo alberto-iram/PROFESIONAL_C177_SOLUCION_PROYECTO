@@ -16,20 +16,20 @@ function getTemplates() {
 }
 
 function fillBlanks(randomWord) {
-    //Make sure blanks are empty to begin with
+    //Asegurar de que los espacios en blanco están vacíos para empezar
     $("#blanks").empty();
 
-    //Show blanks uisng <span>
+    //Mostrar los espacios en blanco usando <span>
     for (let i = 0; i < randomWord.inputs; i++) {
         let input_html = `<span class="fill_blanks" id="input_${i}">_</span>`
         $("#blanks").append(input_html)
     }
 
-    //Show Hint
+    //Mostrar la pista
     $("#hint").html(randomWord.category)
 
     var gameOver = false
-    //Fill blanks only if the character match is found
+    //Rellenar los espacios en blanco sólo si se encuentra la coincidencia de caracteres
     $(".clickable").click(function () {
         var correctGuess = false;
 
@@ -43,7 +43,7 @@ function fillBlanks(randomWord) {
                     $(".fill_blanks").eq(i).html(id);
                     correctGuess = true;
 
-                    //Check if the word guess is complete
+                    //Comprobar si la palabra adivinada está completa
                     if ($("#blanks").text() === randomWord.word.toLowerCase()) {
                         $("#result").text("You Win!!")
                         correctGuess = true;
