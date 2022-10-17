@@ -45,7 +45,7 @@ function fillBlanks(randomWord) {
 
                     //Comprobar si la palabra adivinada está completa
                     if ($("#blanks").text() === randomWord.word.toLowerCase()) {
-                        $("#result").text("You Win!!")
+                        $("#result").text("¡Ganaste!")
                         correctGuess = true;
                         gameOver = true
                     }
