@@ -16,7 +16,7 @@ function getTemplates() {
 }
 
 function fillBlanks(randomWord) {
-    //Asegurar de que los espacios en blanco están vacíos para empezar
+    //Asegurarse de que los espacios en blanco están vacíos para empezar
     $("#blanks").empty();
 
     //Mostrar los espacios en blanco usando <span>
@@ -60,7 +60,7 @@ function fillBlanks(randomWord) {
             $("#life").text(life)
         }
         else if (life == 0) {
-            $("#result").text("You Lost!!")
+            $("#result").text("¡Perdiste!")
         }
     })
 }
